@@ -1,0 +1,10 @@
+age,income,credit,loan_buy_car
+Junior,low,Bad,No
+Youth,high,Fair,Yes
+Middle,low,Excellent,Yes
+Senior,low,Excellent,Yes
+Youth,high,Fair,No
+Middle,high,Excellent,Yes
+Senior,high,Bad,No
+Middle,low,Fair,No
+Junior,low,Bad,No

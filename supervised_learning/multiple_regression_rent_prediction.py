@@ -1,5 +1,7 @@
 # Data set for people, Area in sq feet , age, income by using multiple regression predict the rent by input require area , age and income of the people.
 
+#   Dataset id "rent.csv"
+
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
