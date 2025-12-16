@@ -1,0 +1,8 @@
+sky,humidity,temperature,rain
+clean,no,medium,no
+cloud,yes,high,yes
+clean,yes,high,yes
+cloud,no,low,no
+cloud,yes,low,yes
+clean,no,high,no
+cloud,yes,low,no
