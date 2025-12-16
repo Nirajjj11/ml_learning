@@ -27,14 +27,14 @@ data = {
 df = pd.DataFrame(data)
 # print(df)
 
-X = df[['sweetness','class']]
+X = df[['sweetness','sourness']]            # if we want to 'sweetness','class'
 
 model = KMeans(n_clusters=3,random_state=42)
 model.fit(X)
 
 df['cluster']= model.labels_
 
-plt.scatter(X['sweetness'],X['class'] , c=df['cluster'])
+plt.scatter(X['sweetness'],X['sourness'] , c=df['cluster'])   # if we want to 'sweetness','class'
 
 for i in range(len(df)):
     plt.text(df['sweetness'][i] + 0.1,
@@ -45,6 +45,6 @@ plt.title("Sourness and Sweetness Class Cluster")
 plt.xlabel("Sweetness")
 plt.ylabel("Sourness")
 
-# plt.show()
+plt.show()
 
 print(df)
