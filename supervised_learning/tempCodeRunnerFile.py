@@ -1,2 +1,2 @@
-area = df['area']
-# rent = df['rent
+in)
+print("Accuracy Score :", accu

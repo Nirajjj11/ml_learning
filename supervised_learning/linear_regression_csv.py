@@ -1,7 +1,7 @@
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 
-df = pd.read_csv("supervised_learning/data/room.csv")
+df = pd.read_csv("supervised_learning/data/room.csv")       # Data set is "room.csv"
 
 # area = df['area']
 # rent = df['rent']
