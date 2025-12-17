@@ -3,9 +3,8 @@ from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
 import module1 as m
 
-# Download required NLTK resources
 nltk.download('punkt')
-nltk.download('punkt_tab')   # for newer NLTK
+nltk.download('punkt_tab')   
 nltk.download('wordnet')
 nltk.download('omw-1.4')
 
@@ -17,5 +16,8 @@ words = word_tokenize(content)
 lemma = WordNetLemmatizer()
 
 print("Lemmatized Words:")
-for w in words:
-    print(lemma.lemmatize(w), end = ' ')
+# for w in words:
+#     print(lemma.lemmatize(w), end = ' ')
+
+list_lemma = [lemma.lemmatize(w) for w in words]
+print(list_lemma)
