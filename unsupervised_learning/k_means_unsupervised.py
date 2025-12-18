@@ -17,9 +17,14 @@ model = KMeans(n_clusters=3,random_state=0)
 model.fit(X)
 
 df['cluster']= model.labels_
-# print(df)
+print(df)
 
 plt.scatter(X['annual_income'],X['spending_score'], c=df['cluster'])
+
+for i in range(len(df)):
+    plt.text(df['annual_income'][i] + 0.1,
+            df['spending_score'][i] + 0.1,
+            df['name'][i])
 
 plt.title("Spending Score vs Annual Income")
 plt.xlabel("Annual Income")
