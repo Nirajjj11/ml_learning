@@ -7,12 +7,24 @@ df = pd.read_csv("supervised_learning/data/rain.csv")
 
 df_encode = df.apply(lambda col:col.astype('category').cat.codes)
 
-# print(df_encode)          #   ->    Encode the value in numerical form
+# print(f'{df_encode}-{df} ')          #   ->    Encode the value in numerical form
 
+# for getting the value nearby just for visualization ---------------------------------------
+# df_combined = df.copy()
+
+
+# print(df_combined)
+
+# for col in df.columns:
+#     df_combined[col]= df[col].astype(str) + " - "+ df_encode[col].astype(str)
+
+# print(df_combined)
+
+# --------------------------------------------------------------------
 model = tree.DecisionTreeClassifier()
 X = df_encode.drop('rain',axis=1)
 y = df_encode['rain']
-
+# print(X)
 sky = input("Enter Sky : ").upper()
 humidity = input("Enter humidity : ").upper()
 temperture = input("Enter Temperature : ").upper()
