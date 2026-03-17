@@ -19,7 +19,7 @@ X = df[['task_hrs']]
 y = df['success']
 
 #  split Data
-X_train,X_trainin,y_train,y_test = train_test_split(X,y,train_size=0.3,random_state=42)
+X_train,X_test,y_train,y_test = train_test_split(X,y,train_size=0.3,random_state=42)
 
 # train model
 model = LogisticRegression()
@@ -31,6 +31,6 @@ print("Predicted Output : ", success_predict[0])
 
 # print("Accuracy Score : ",accuracy_score(X_trainin, success_predict[0]))          # Not Working 
 
-y_pred = model.predict(X_trainin)
+y_pred = model.predict(X_test)
 print("Accuracy Score :", accuracy_score(y_test, y_pred))
 
