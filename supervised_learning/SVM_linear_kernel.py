@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 X = [[2,3],[3,4],[1,1],[5,6],[6,7],[4,3],[6,8]]
 y = [1,0,0,1,1,0,1]
 
+# model used here is kernel as per demend ww use here rbf or other in the parameter
 model = svm.SVC(kernel='linear')
 model.fit(X,y)
 
